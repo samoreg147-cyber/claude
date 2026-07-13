@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Голосование 2026 — Мобилизация в России осенью</title>
+  <meta name="description" content="Независимый общественный опрос: как вы относитесь к возможной новой волне мобилизации в России осенью 2026 года. Анонимно и без регистрации." />
+  <meta name="theme-color" content="#0b0f1a" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Голосование 2026 — Мобилизация в России осенью" />
+  <meta property="og:description" content="Независимый анонимный опрос общественного мнения. Выскажите свою позицию." />
+  <meta property="og:locale" content="ru_RU" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%B3%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark">🗳️</span>
+      <span class="brand-text">Голосование<b>2026</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#vote">Голосовать</a>
+      <a href="#results">Результаты</a>
+      <a href="#about">О проекте</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a href="#vote" class="btn btn-ghost nav-cta">Голосовать</a>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <span class="pill">
+        <span class="pulse"></span>
+        Открытый опрос · осень 2026
+      </span>
+      <h1 class="hero-title">
+        Мобилизация осенью&nbsp;2026:<br />
+        <span class="grad">какова ваша позиция?</span>
+      </h1>
+      <p class="hero-sub">
+        Независимый и анонимный опрос общественного мнения. Без регистрации,
+        без сбора персональных данных. Один голос — одно мнение.
+      </p>
+      <div class="hero-actions">
+        <a href="#vote" class="btn btn-primary">Проголосовать →</a>
+        <a href="#results" class="btn btn-ghost">Смотреть результаты</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" data-count-total>—</div>
+          <div class="stat-label">всего голосов</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">анонимно</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0 ₽</div>
+          <div class="stat-label">без рекламы</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vote -->
+    <section id="vote" class="section">
+      <div class="card vote-card">
+        <div class="card-head">
+          <h2>Как вы относитесь к возможной новой волне мобилизации в&nbsp;РФ осенью&nbsp;2026&nbsp;года?</h2>
+          <p class="muted">Выберите один вариант. Изменить голос можно в любой момент.</p>
+        </div>
+
+        <div class="options" role="radiogroup" aria-label="Варианты ответа">
+          <button class="option" data-option="against" role="radio" aria-checked="false">
+            <span class="option-emoji">🙅</span>
+            <span class="option-body">
+              <span class="option-title">Не поддерживаю</span>
+              <span class="option-desc">Я против новой волны мобилизации</span>
+            </span>
+            <span class="option-check"></span>
+          </button>
+
+          <button class="option" data-option="for" role="radio" aria-checked="false">
+            <span class="option-emoji">🙋</span>
+            <span class="option-body">
+              <span class="option-title">Поддерживаю</span>
+              <span class="option-desc">Считаю мобилизацию оправданной</span>
+            </span>
+            <span class="option-check"></span>
+          </button>
+
+          <button class="option" data-option="unsure" role="radio" aria-checked="false">
+            <span class="option-emoji">🤔</span>
+            <span class="option-body">
+              <span class="option-title">Затрудняюсь ответить</span>
+              <span class="option-desc">Пока не определился(-ась)</span>
+            </span>
+            <span class="option-check"></span>
+          </button>
+        </div>
+
+        <div class="vote-foot">
+          <button id="submitVote" class="btn btn-primary" disabled>Отдать голос</button>
+          <span id="voteHint" class="muted small">Ваш голос сохраняется анонимно в этом браузере.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="section">
+      <div class="section-head">
+        <h2>Результаты в реальном времени</h2>
+        <p class="muted">Обновляются мгновенно после каждого голоса.</p>
+      </div>
+
+      <div class="card results-card">
+        <div class="result" data-result="against">
+          <div class="result-top">
+            <span class="result-name">🙅 Не поддерживаю</span>
+            <span class="result-pct">0%</span>
+          </div>
+          <div class="bar"><span class="bar-fill against"></span></div>
+          <div class="result-votes">0 голосов</div>
+        </div>
+
+        <div class="result" data-result="for">
+          <div class="result-top">
+            <span class="result-name">🙋 Поддерживаю</span>
+            <span class="result-pct">0%</span>
+          </div>
+          <div class="bar"><span class="bar-fill for"></span></div>
+          <div class="result-votes">0 голосов</div>
+        </div>
+
+        <div class="result" data-result="unsure">
+          <div class="result-top">
+            <span class="result-name">🤔 Затрудняюсь ответить</span>
+            <span class="result-pct">0%</span>
+          </div>
+          <div class="bar"><span class="bar-fill unsure"></span></div>
+          <div class="result-votes">0 голосов</div>
+        </div>
+
+        <div class="results-foot">
+          <span class="muted small" data-count-total-line>Всего голосов: 0</span>
+          <button id="shareBtn" class="btn btn-ghost small">🔗 Поделиться опросом</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>О проекте</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card feature">
+          <div class="feature-icon">🕵️</div>
+          <h3>Полная анонимность</h3>
+          <p class="muted">Мы не запрашиваем имя, телефон или e‑mail. Голос не привязан к личности.</p>
+        </div>
+        <div class="card feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Мгновенный результат</h3>
+          <p class="muted">Диаграмма обновляется сразу — видно, как распределяются мнения.</p>
+        </div>
+        <div class="card feature">
+          <div class="feature-icon">🔓</div>
+          <h3>Открытый код</h3>
+          <p class="muted">Проект размещён на GitHub Pages. Любой может изучить, как он устроен.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="section-head">
+        <h2>Частые вопросы</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Это официальный референдум?</summary>
+          <p class="muted">Нет. Это независимый неофициальный опрос общественного мнения, не имеющий юридической силы. Он создан для наглядного выражения позиции людей.</p>
+        </details>
+        <details>
+          <summary>Как учитываются голоса?</summary>
+          <p class="muted">В этой статической версии голос сохраняется локально в вашем браузере (localStorage), поэтому счётчик отражает данные вашего устройства. Чтобы вести общий подсчёт для всех посетителей, к сайту можно подключить бесплатный серверный счётчик — код к этому подготовлен.</p>
+        </details>
+        <details>
+          <summary>Собираете ли вы персональные данные?</summary>
+          <p class="muted">Нет. Никаких форм регистрации, cookies для трекинга или аналитики третьих лиц. Только анонимный выбор варианта.</p>
+        </details>
+        <details>
+          <summary>Могу ли я изменить свой голос?</summary>
+          <p class="muted">Да. Выберите другой вариант и подтвердите — предыдущий голос будет заменён.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="disclaimer card">
+      <strong>Дисклеймер.</strong> Проект носит исключительно информационно‑просветительский характер и представляет собой
+      неофициальный опрос общественного мнения. Он не является голосованием, референдумом или официальным
+      мероприятием органов власти и не имеет юридической силы. Участие добровольное и анонимное.
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Голосование2026</span>
+      <span class="muted">Сделано на GitHub Pages · без рекламы и трекинга</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
