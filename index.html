@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Голосование 2026 — опрос о мобилизации · инициатор «Новые люди»</title>
   <meta name="description" content="Партия «Новые люди» инициирует независимый общественный опрос о возможной новой волне мобилизации в России осенью 2026 года. Зарегистрируйтесь, чтобы принять участие в голосовании." />
-  <meta name="theme-color" content="#0b0f1a" />
+  <meta name="theme-color" content="#0b1418" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Голосование 2026 — опрос о мобилизации осенью" />
@@ -33,11 +33,11 @@
     </a>
     <nav class="nav-links">
       <a href="#vote">Вопрос</a>
+      <a href="#results">Результаты</a>
       <a href="#how">Как участвовать</a>
       <a href="#about">Об инициаторе</a>
-      <a href="#faq">Вопросы</a>
     </nav>
-    <a href="#" class="btn btn-primary nav-cta js-register">Войти и голосовать</a>
+    <a href="#" class="btn btn-primary nav-cta js-register">Голосовать</a>
   </header>
 
   <main id="top">
@@ -46,20 +46,20 @@
       <div class="hero-text">
         <span class="pill">
           <span class="pulse"></span>
-          Инициатор опроса — партия «Новые люди»
+          Инициатор — партия «Новые люди»
         </span>
         <h1 class="hero-title">
-          Мобилизация осенью&nbsp;2026:<br />
+          Мобилизация осенью 2026:<br />
           <span class="grad">скажите своё слово</span>
         </h1>
         <p class="hero-sub">
-          Партия «Новые люди» инициирует независимый общественный опрос о возможной
-          новой волне мобилизации в России. Голосование анонимное — чтобы принять
-          участие, войдите и зарегистрируйтесь на платформе опроса.
+          Независимый общественный опрос о возможной новой волне мобилизации в России.
+          Голосование анонимное — чтобы принять участие, войдите и зарегистрируйтесь
+          на платформе опроса.
         </p>
         <div class="hero-actions">
-          <a href="#" class="btn btn-primary js-register">Зарегистрироваться для голосования →</a>
-          <a href="#how" class="btn btn-ghost">Как это работает</a>
+          <a href="#" class="btn btn-primary js-register">Голосовать</a>
+          <a href="#results" class="btn btn-ghost">Результаты опроса</a>
         </div>
         <div class="hero-stats">
           <div class="stat"><div class="stat-num">100%</div><div class="stat-label">анонимно</div></div>
@@ -67,14 +67,8 @@
           <div class="stat"><div class="stat-num">0 ₽</div><div class="stat-label">без рекламы</div></div>
         </div>
       </div>
-      <div class="hero-media">
-        <img class="photo" alt="Люди участвуют в общественном обсуждении"
-             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=70"
-             loading="eager" referrerpolicy="no-referrer"
-             onerror="this.onerror=null;this.classList.add('photo--fallback');this.removeAttribute('src');" />
-        <div class="hero-media-badge">
-          <span class="np-dot"></span> Новые люди
-        </div>
+      <div class="hero-media brand-panel">
+        <img class="logo-img" src="assets/novye-lyudi.svg" alt="Партия «Новые люди»" width="1200" height="675" />
       </div>
     </section>
 
@@ -83,18 +77,11 @@
       <div class="card vote-card">
         <div class="card-head">
           <span class="eyebrow">Вопрос опроса</span>
-          <h2>Как вы относитесь к возможной новой волне мобилизации в&nbsp;РФ осенью&nbsp;2026&nbsp;года?</h2>
+          <h2>Как вы относитесь к возможной новой волне мобилизации в РФ осенью 2026 года?</h2>
           <p class="muted">Голосование открыто после входа и регистрации на платформе опроса.</p>
         </div>
 
         <div class="options" aria-label="Варианты ответа">
-          <div class="option">
-            <span class="option-emoji">🙅</span>
-            <span class="option-body">
-              <span class="option-title">Не поддерживаю</span>
-              <span class="option-desc">Я против новой волны мобилизации</span>
-            </span>
-          </div>
           <div class="option">
             <span class="option-emoji">🙋</span>
             <span class="option-body">
@@ -103,10 +90,17 @@
             </span>
           </div>
           <div class="option">
+            <span class="option-emoji">🙅</span>
+            <span class="option-body">
+              <span class="option-title">Не поддерживаю</span>
+              <span class="option-desc">Я против новой волны мобилизации</span>
+            </span>
+          </div>
+          <div class="option">
             <span class="option-emoji">🤔</span>
             <span class="option-body">
-              <span class="option-title">Затрудняюсь ответить</span>
-              <span class="option-desc">Пока не определился(-ась)</span>
+              <span class="option-title">Не определился</span>
+              <span class="option-desc">Затрудняюсь ответить</span>
             </span>
           </div>
         </div>
@@ -114,6 +108,45 @@
         <div class="vote-foot">
           <a href="#" class="btn btn-primary js-register">Войти и проголосовать</a>
           <span class="muted small">🔒 Вход нужен, чтобы один человек голосовал один раз.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="section">
+      <div class="section-head">
+        <h2>Результаты голосования</h2>
+        <p class="muted">Предварительные данные опроса на текущий момент.</p>
+      </div>
+
+      <div class="card results-card">
+        <div class="result" data-pct="40">
+          <div class="result-top">
+            <span class="result-name">🙋 Поддерживаю</span>
+            <span class="result-pct">0%</span>
+          </div>
+          <div class="bar"><span class="bar-fill for"></span></div>
+        </div>
+
+        <div class="result" data-pct="30">
+          <div class="result-top">
+            <span class="result-name">🙅 Не поддерживаю</span>
+            <span class="result-pct">0%</span>
+          </div>
+          <div class="bar"><span class="bar-fill against"></span></div>
+        </div>
+
+        <div class="result" data-pct="30">
+          <div class="result-top">
+            <span class="result-name">🤔 Не определился</span>
+            <span class="result-pct">0%</span>
+          </div>
+          <div class="bar"><span class="bar-fill unsure"></span></div>
+        </div>
+
+        <div class="results-foot">
+          <span class="muted small">Итоги обновляются по мере поступления голосов.</span>
+          <a href="#" class="btn btn-ghost small js-register">Добавить свой голос</a>
         </div>
       </div>
     </section>
@@ -128,7 +161,7 @@
         <div class="card step">
           <div class="step-num">1</div>
           <h3>Зарегистрируйтесь</h3>
-          <p class="muted">Нажмите «Войти и голосовать» и перейдите на платформу опроса, инициированного партией «Новые люди».</p>
+          <p class="muted">Нажмите «Голосовать» и перейдите на платформу опроса, инициированного партией «Новые люди».</p>
         </div>
         <div class="card step">
           <div class="step-num">2</div>
@@ -142,21 +175,17 @@
         </div>
       </div>
       <div class="center-cta">
-        <a href="#" class="btn btn-primary js-register">Перейти к регистрации →</a>
+        <a href="#" class="btn btn-primary js-register">Перейти к регистрации</a>
       </div>
     </section>
 
     <!-- About initiator -->
     <section id="about" class="section">
       <div class="about">
-        <div class="about-media">
-          <img class="photo" alt="Команда сторонников партии «Новые люди»"
-               src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1100&q=70"
-               loading="lazy" referrerpolicy="no-referrer"
-               onerror="this.onerror=null;this.classList.add('photo--fallback');this.removeAttribute('src');" />
+        <div class="about-media brand-panel">
+          <img class="logo-img" src="assets/novye-lyudi.svg" alt="Партия «Новые люди»" width="1200" height="675" />
         </div>
         <div class="about-text">
-          <div class="np-logo"><span class="np-dot"></span> Новые люди</div>
           <h2>Об инициаторе опроса</h2>
           <p class="muted">
             «Новые люди» — политическая партия, которая выступает за перемены, открытый диалог

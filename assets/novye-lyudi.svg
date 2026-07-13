@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Партия Новые люди">
+  <rect width="1200" height="675" fill="#17b3aa"/>
+  <g fill="#ffffff" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="600" y="175" font-size="56" font-weight="500" letter-spacing="22">ПАРТИЯ</text>
+    <text x="600" y="360" font-size="172" font-weight="900" letter-spacing="-2">НОВЫЕ</text>
+    <text x="600" y="530" font-size="172" font-weight="900" letter-spacing="-2">ЛЮДИ</text>
+  </g>
+</svg>
